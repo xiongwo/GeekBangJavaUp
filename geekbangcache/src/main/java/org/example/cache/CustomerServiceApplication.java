@@ -63,6 +63,14 @@ public class CustomerServiceApplication implements ApplicationRunner {
         stopWatch.stop();
 
         log.info(stopWatch.prettyPrint());
+        /*
+        *
+        -----------------------------------------
+        ms     %     Task name
+        -----------------------------------------
+        01784  097%  没缓存
+        00054  003%  有缓存
+        * */
     }
 
     private void callDirect(String cityName, int count) throws IOException {
